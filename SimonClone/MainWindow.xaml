@@ -1,0 +1,13 @@
+﻿<Window x:Class="SimonClone.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        
+        xmlns:sbk="http://schemas.sbkgame.be/sbkgame/core/"
+        
+        DataContext="{Binding Source={StaticResource Locator}, Path=Main}"                
+        Title="{Binding Title}"
+        Background="Yellow"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight">
+    <Viewbox Width="1024" Height="768">
+        <sbk:SceneControl Width="1024" Height="768" />
+    </Viewbox>
+</Window>
